@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Prezzi</title>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Seleziona tutte le celle th e td
+            const celleTabella = document.querySelectorAll('th, td');
+
+            // Itera su tutte le celle
+            celleTabella.forEach(element => {
+                if (element.textContent.trim() === '') {
+                    element.style.backgroundColor = '#E5D0CC';
+                }
+                if (element.textContent.trim() === '.') {
+                    element.class = 'bs';
+                    element.style.color = 'transparent';
+                }
+                if (element.textContent.trim() === '*') {
+                    element.class = 'ch';
+                    element.style.color = 'transparent';
+                }
+                if (/^[a-zA-ZÀ-ÖØ-öø-ÿ]+$/.test(element.textContent.trim())) {
+                    element.style.backgroundColor = '#E5DADA';
+                }
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>
+        BED&BREAKFAST
+    </h1>
+    </header>
+    <nav>
+        <a href="./homepage.html">Homepage</a>
+        <a href="./prezzi.html">Prezzi</a>
+        <a href="./form.html">Contatti</a>
+    </nav>
+    <main>
+        <h2>Prezzi</h2>
+
+        <table border="1">
+            <tr>
+                <th class="ch">*</th>
+                <td>Chiuso/Non disponibile</td>
+            </tr>
+        </table>
+
+        <table border="1">
+            <tr>
+                <th class="bs">.</th>
+                <td>Bassa stagione </td>
+            </tr>
+        </table>
+       
+        <table border="1">
+            <tr>
+                <th class="ms">.</th>
+                <td>Media stagione </td>
+            </tr>
+        </table>
+       
+        <table border="1">
+            <tr>
+                <th class="as">.</th>
+                <td>Alta stagione </td>
+            </tr>
+        </table>
+
+
+        <table border="1">
+            <tr>
+                <th></th>
+                <th>LU</th>
+                <th>MA</th>
+                <th>ME</th>
+                <th>GIO</th>
+                <th>VE</th>
+                <th>SA</th>
+                <th>DO</th>
+            </tr>
+            <tr>
+                <th rowspan="5">GENNAIO</th>
+                <td></td>
+                <td class="as">1</td>
+                <td class="as">2</td>
+                <td class="bs">3</td>
+                <td class="bs">4</td>
+                <td class="bs">5</td>
+                <td class="bs">6</td>
+            </tr>
+            <tr>
+                <td class="bs">7</td>
+                <td class="bs">8</td>
+                <td class="bs">9</td>
+                <td class="bs">10</td>
+                <td class="bs">11</td>
+                <td class="bs">12</td>
+                <td class="bs">13</td>
+            </tr>
+            <tr>
+                <td class="bs">14</td>
+                <td class="bs">15</td>
+                <td class="bs">16</td>
+                <td class="bs">17</td>
+                <td class="bs">18</td>
+                <td class="bs">19</td>
+                <td class="bs">20</td>
+            </tr>
+            <tr>
+                <td class="bs">21</td>
+                <td class="bs">22</td>
+                <td class="bs">23</td>
+                <td class="bs">24</td>
+                <td class="bs">25</td>
+                <td class="bs">26</td>
+                <td class="bs">27</td>
+            </tr>
+            <tr>
+                <td class="bs">28</td>
+                <td class="bs">29</td>
+                <td class="bs">30</td>
+                <td class="bs">31</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th rowspan="5">FEBBRAIO</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bs">1</td>
+                <td class="bs">2</td>
+                <td class="bs">3</td>
+            </tr>
+            <tr>
+                <td class="bs">4</td>
+                <td class="bs">5</td>
+                <td class="bs">6</td>
+                <td class="bs">7</td>
+                <td class="bs">8</td>
+                <td class="bs">9</td>
+                <td class="bs">10</td>
+            </tr>
+            <tr>
+                <td class="bs">11</td>
+                <td class="bs">12</td>
+                <td class="bs">13</td>
+                <td class="bs">14</td>
+                <td class="bs">15</td>
+                <td class="bs">16</td>
+                <td class="bs">17</td>
+            </tr>
+            <tr>
+                <td class="bs">18</td>
+                <td class="bs">19</td>
+                <td class="bs">20</td>
+                <td class="bs">21</td>
+                <td class="bs">22</td>
+                <td class="bs">23</td>
+                <td class="bs">24</td>
+            </tr>
+            <tr>
+                <td class="bs">25</td>
+                <td class="bs">26</td>
+                <td class="bs">27</td>
+                <td class="bs">28</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th rowspan="5">MARZO</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+            </tr>
+
+            <tr>
+                <th rowspan="5">APRILE</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>30</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th rowspan="5">MAGGIO</th>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td class="bs">27</td>
+                <td class="bs">28</td>
+                <td class="bs">29</td>
+                <td class="bs">30</td>
+                <td class="bs">31</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!-- Giugno -->
+            <tr>
+                <th rowspan="6">GIUGNO</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bs">1</td>
+                <td class="bs">2</td>
+            </tr>
+            <tr>
+                <td class="bs">3</td>
+                <td class="ms">4</td>
+                <td class="ms">5</td>
+                <td class="ms">6</td>
+                <td class="ms">7</td>
+                <td class="ms">8</td>
+                <td class="ms">9</td>
+            </tr>
+            <tr>
+                <td class="ms">10</td>
+                <td class="ms">11</td>
+                <td class="ms">12</td>
+                <td class="ms">13</td>
+                <td class="ms">14</td>
+                <td class="ms">15</td>
+                <td class="ms">16</td>
+            </tr>
+            <tr>
+                <td class="ms">17</td>
+                <td class="ms">18</td>
+                <td class="ms">19</td>
+                <td class="ms">20</td>
+                <td class="ms">21</td>
+                <td class="ms">22</td>
+                <td class="ms">23</td>
+            </tr>
+            <tr>
+                <td class="ms">24</td>
+                <td class="ms">25</td>
+                <td class="ms">26</td>
+                <td class="ms">27</td>
+                <td class="ms">28</td>
+                <td class="ms">29</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="ms">30</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!-- Luglio -->
+            <tr>
+                <th rowspan="5">LUGLIO</th>
+                <td></td>
+                <td class="ms">1</td>
+                <td class="ms">2</td>
+                <td class="ms">3</td>
+                <td class="ms">4</td>
+                <td class="ms">5</td>
+                <td class="ms">6</td>
+            </tr>
+            <tr>
+                <td class="ms">7</td>
+                <td class="ms">8</td>
+                <td class="ms">9</td>
+                <td class="ms">10</td>
+                <td class="ms">11</td>
+                <td class="ms">12</td>
+                <td class="ms">13</td>
+            </tr>
+            <tr>
+                <td class="ms">14</td>
+                <td class="ms">15</td>
+                <td class="ms">16</td>
+                <td class="ms">17</td>
+                <td class="ms">18</td>
+                <td class="ms">19</td>
+                <td class="ms">20</td>
+            </tr>
+            <tr>
+                <td class="ms">21</td>
+                <td class="ms">22</td>
+                <td class="ms">23</td>
+                <td class="ms">24</td>
+                <td class="ms">25</td>
+                <td class="ms">26</td>
+                <td class="ms">27</td>
+            </tr>
+            <tr>
+                <td class="ms">28</td>
+                <td class="ms">29</td>
+                <td class="ms">30</td>
+                <td class="ms">31</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <!-- Agosto -->
+            <tr>
+                <th rowspan="5">AGOSTO</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="ms">1</td>
+                <td class="ms">2</td>
+                <td class="ms">3</td>
+            </tr>
+            <tr>
+                <td class="ms">4</td>
+                <td class="ms">5</td>
+                <td class="ms">6</td>
+                <td class="ms">7</td>
+                <td class="ms">8</td>
+                <td class="ms">9</td>
+                <td class="ms">10</td>
+            </tr>
+            <tr>
+                <td class="as">11</td>
+                <td class="as">12</td>
+                <td class="as">13</td>
+                <td class="as">14</td>
+                <td class="as">15</td>
+                <td class="as">16</td>
+                <td class="as">17</td>
+            </tr>
+            <tr>
+                <td class="as">18</td>
+                <td class="as">19</td>
+                <td class="as">20</td>
+                <td class="as">21</td>
+                <td class="as">22</td>
+                <td class="as">23</td>
+                <td class="as">24</td>
+            </tr>
+            <tr>
+                <td class="ms">25</td>
+                <td class="ms">26</td>
+                <td class="ms">27</td>
+                <td class="ms">28</td>
+                <td class="ms">29</td>
+                <td class="ms">30</td>
+                <td class="ms">31</td>
+            </tr>
+            <!-- Settembre -->
+            <tr>
+                <th rowspan="5">SETTEMBRE</th>
+                <td class="ms">1</td>
+                <td class="ms">2</td>
+                <td class="ms">3</td>
+                <td class="ms">4</td>
+                <td class="ms">5</td>
+                <td class="ms">6</td>
+                <td class="ms">7</td>
+            </tr>
+            <tr>
+                <td class="ms">8</td>
+                <td class="ms">9</td>
+                <td class="ms">10</td>
+                <td class="ms">11</td>
+                <td class="ms">12</td>
+                <td class="ms">13</td>
+                <td class="ms">14</td>
+            </tr>
+            <tr>
+                <td class="ms">15</td>
+                <td class="ms">16</td>
+                <td class="ms">17</td>
+                <td class="ms">18</td>
+                <td class="ms">19</td>
+                <td class="ms">20</td>
+                <td class="ms">21</td>
+            </tr>
+            <tr>
+                <td class="ms">22</td>
+                <td class="ms">23</td>
+                <td class="ms">24</td>
+                <td class="ms">25</td>
+                <td class="ms">26</td>
+                <td class="ms">27</td>
+                <td class="ms">28</td>
+            </tr>
+            <tr>
+                <td class="ms">29</td>
+                <td class="ms">30</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <!-- Ottobre -->
+            <tr>
+                <th rowspan="5">OTTOBRE</th>
+                <td></td>
+                <td></td>
+                <td class="ms">1</td>
+                <td class="ms">2</td>
+                <td class="ms">3</td>
+                <td class="ms">4</td>
+                <td class="ms">5</td>
+            </tr>
+            <tr>
+                <td class="bs">6</td>
+                <td class="bs">7</td>
+                <td class="bs">8</td>
+                <td class="bs">9</td>
+                <td class="bs">10</td>
+                <td class="bs">11</td>
+                <td class="bs">12</td>
+            </tr>
+            <tr>
+                <td class="bs">13</td>
+                <td class="bs">14</td>
+                <td class="bs">15</td>
+                <td class="bs">16</td>
+                <td class="bs">17</td>
+                <td class="bs">18</td>
+                <td class="bs">19</td>
+            </tr>
+            <tr>
+                <td class="bs">20</td>
+                <td class="bs">21</td>
+                <td class="bs">22</td>
+                <td class="bs">23</td>
+                <td class="bs">24</td>
+                <td class="bs">25</td>
+                <td class="bs">26</td>
+            </tr>
+            <tr>
+                <td class="ms">27</td>
+                <td class="ms">28</td>
+                <td class="ms">29</td>
+                <td class="ms">30</td>
+                <td class="ms">31</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!-- Novembre -->
+            <tr>
+                <th rowspan="5">NOVEMBRE</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="ms">1</td>
+                <td class="ms">2</td>
+            </tr>
+            <tr>
+                <td class="bs">3</td>
+                <td class="bs">4</td>
+                <td class="bs">5</td>
+                <td class="bs">6</td>
+                <td class="bs">7</td>
+                <td class="bs">8</td>
+                <td class="bs">9</td>
+            </tr>
+            <tr>
+                <td class="bs">10</td>
+                <td class="bs">11</td>
+                <td class="bs">12</td>
+                <td class="bs">13</td>
+                <td class="bs">14</td>
+                <td class="bs">15</td>
+                <td class="bs">16</td>
+            </tr>
+            <tr>
+                <td class="bs">17</td>
+                <td class="bs">18</td>
+                <td class="bs">19</td>
+                <td class="bs">20</td>
+                <td class="bs">21</td>
+                <td class="bs">22</td>
+                <td class="bs">23</td>
+            </tr>
+            <tr>
+                <td class="bs">24</td>
+                <td class="bs">25</td>
+                <td class="bs">26</td>
+                <td class="bs">27</td>
+                <td class="bs">28</td>
+                <td class="bs">29</td>
+                <td class="bs">30</td>
+            </tr>
+            <!-- Dicembre -->
+            <tr>
+                <th rowspan="5">DICEMBRE</th>
+                <td class="bs">1</td>
+                <td class="bs">2</td>
+                <td class="bs">3</td>
+                <td class="bs">4</td>
+                <td class="bs">5</td>
+                <td class="bs">6</td>
+                <td class="bs">7</td>
+            </tr>
+            <tr>
+                <td class="bs">8</td>
+                <td class="bs">9</td>
+                <td class="bs">10</td>
+                <td class="bs">11</td>
+                <td class="bs">12</td>
+                <td class="bs">13</td>
+                <td class="bs">14</td>
+            </tr>
+            <tr>
+                <td class="ms">15</td>
+                <td class="ms">16</td>
+                <td class="ms">17</td>
+                <td class="ms">18</td>
+                <td class="ms">19</td>
+                <td class="ms">20</td>
+                <td class="ms">21</td>
+            </tr>
+            <tr>
+                <td class="as">22</td>
+                <td class="as">23</td>
+                <td class="as">24</td>
+                <td class="as">25</td>
+                <td class="as">26</td>
+                <td class="as">27</td>
+                <td class="as">28</td>
+            </tr>
+            <tr>
+                <td class="as">29</td>
+                <td class="as">30</td>
+                <td class="as">31</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <div>
+            <a href="">Info legali</a>
+            <a href="">Politica sui cookie</a>
+        </div>
+        <a href="#">
+            <h3>
+                BED&BREAKFAST
+            </h3>
+        </a>
+    </footer>
+</body>
+
+</html>
