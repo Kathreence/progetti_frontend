@@ -1,0 +1,103 @@
+* {
+  color: black;
+  text-align: center;
+}
+
+a, p {
+  font-size: 20px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  margin-bottom: 1rem;
+}
+
+main{
+  width: 100%;
+  background: linear-gradient(180deg, transparent, #FFE9F3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+  background: linear-gradient(180deg, #FFE9F3, transparent);
+  margin-top: 5;
+  display: flex;
+  justify-content: space-around;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  width: 75%;
+}
+
+.principale {
+  max-width: 1600px;
+}
+
+table{
+  background: white;
+  margin-bottom: 1rem;
+}
+
+th, td {
+  height: 20px;
+  min-width: 20px;
+}
+
+label {
+  width: 70%;
+}
+
+input, select {
+  width: 25%;
+}
+
+img {
+  width: 50vw;
+}
+
+.formC {
+  
+}
+
+.ch {
+  background-color: white;
+}
+
+.bs {
+  background-color: #788BFF;
+}
+
+.ms {
+  background-color: #9BB1FF;
+}
+
+.as {
+  background-color: #C4E7D4;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+
+.pt10{
+  padding-top: 10px;
+}
