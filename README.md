@@ -2,4 +2,4 @@ Queesta mia repository contiene giusto qualche mio progetto in frontend non anco
 
 -bb è stato progettato senza un framework con i linguaggi in html, CSS e javascript.
 
--bb_react è stesso progetto precedente ma con framework in react.
+-bb_react è stesso progetto precedente utilizzando la libreria di react.
